@@ -47,7 +47,8 @@ game_on = True
 player_chip = Chip()
 while game_on:
     round_over = False
-    while True:
+    while game_on:
+        print(game_on)
         player = Hand()
         dealer = Hand()
         bid = take_bid(player_chip)
@@ -113,6 +114,11 @@ while game_on:
         game_on = False
         break
 
-    game_on = bool(input("DO you want to go for another round? (True-False)"))
+    choice = input("Do you want to go for another round? (y/n): ").strip().lower()
+    if choice == "y":
+        game_on = True
+    else:
+        game_on = False
+
 
 
