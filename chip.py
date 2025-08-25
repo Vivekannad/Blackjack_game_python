@@ -7,7 +7,7 @@ class Chip:
     def bet_chip(self, chip):
         if chip > self.chips:
             self.chips -= self.chips
-            self.bet_chips = self.chips
+            self.bet_chips = chip
         else:
             self.chips -= chip
             self.bet_chips = self.chips

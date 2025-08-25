@@ -48,7 +48,6 @@ player_chip = Chip()
 while game_on:
     round_over = False
     while game_on:
-        print(game_on)
         player = Hand()
         dealer = Hand()
         bid = take_bid(player_chip)
